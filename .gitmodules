@@ -1,0 +1,3 @@
+[submodule "Optimizing-SGEMV-on-NVIDIA-GPUs"]
+	path = Optimizing-SGEMV-on-NVIDIA-GPUs
+	url = https://github.com/yzhaiustc/Optimizing-SGEMV-on-NVIDIA-GPUs
