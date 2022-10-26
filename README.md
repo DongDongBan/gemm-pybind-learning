@@ -19,6 +19,10 @@ The device architecture "sm_75" should be replaced by your native GPU capability
 if Nothing went wrong, check your module with these codes:
 ```bash
 cd Optimizing-SGEMV-on-NVIDIA-GPUs
+<<<<<<< HEAD
 python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm.host(4096, 4096, 2)'
+=======
+python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm(4096, 4096, 2)'
+>>>>>>> 5b3a6351011b989b50f853738cd7c5b01bb0cc60
 ```
 
