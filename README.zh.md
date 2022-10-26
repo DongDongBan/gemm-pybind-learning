@@ -2,12 +2,8 @@
 
 这个项目仅仅是为了学习练手pybind11和CUDA性能优化而编写的。为了缩短调试时间，我直接选取了最简单的矩阵乘法案例。
 这里直接使用了[Yujia Zhai](yujiazhai94@gmail.com)的[优化实现](https://github.com/yzhaiustc/Optimizing-SGEMV-on-NVIDIA-GPUs)作为子模块。
-<<<<<<< HEAD
 cmake子文件夹的内容来自[modern CMake/Cuda](https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9444-build-systems-exploring-modern-cmake-cuda-v2.pdf)。
 CMakeLists改写自[pkestene](https://github.com/pkestene/pybind11-cuda)
-=======
-
->>>>>>> 5b3a6351011b989b50f853738cd7c5b01bb0cc60
 ## 构建流程
 
 本项目使用CMake（最低版本3.12）作为构建工具，后续可能会添加setuptools以及scikit-build的支持：
@@ -32,10 +28,6 @@ cmake ..
 验证代码：
 ```bash
 cd Optimizing-SGEMV-on-NVIDIA-GPUs
-<<<<<<< HEAD
 python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm.host(4096, 4096, 2)'
-=======
-python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm(4096, 4096, 2)'
->>>>>>> 5b3a6351011b989b50f853738cd7c5b01bb0cc60
 ```
 即可测试矩阵乘法代码与CUBLAS的相对性能！

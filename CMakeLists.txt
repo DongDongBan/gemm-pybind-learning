@@ -1,9 +1,6 @@
 # use cmake version >= 3.12 so that to benefit from
 # the new FindPython3 module
-<<<<<<< HEAD
 # Overwritten from https://github.com/pkestene/pybind11-cuda/CmakeLists.txt
-=======
->>>>>>> 5b3a6351011b989b50f853738cd7c5b01bb0cc60
 cmake_minimum_required(VERSION 3.12)
 
 message("Using CMake version ${CMAKE_VERSION}")
