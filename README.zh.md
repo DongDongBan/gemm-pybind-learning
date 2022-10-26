@@ -28,6 +28,6 @@ cmake ..
 验证代码：
 ```bash
 cd Optimizing-SGEMV-on-NVIDIA-GPUs
-python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm(4096, 4096, 2)'
+python -c 'import mygemm; mygemm.host(4096, 4096, 1); mygemm.host(4096, 4096, 2)'
 ```
 即可测试矩阵乘法代码与CUBLAS的相对性能！
